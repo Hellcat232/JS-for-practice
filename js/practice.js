@@ -1,26 +1,16 @@
-// function checkStorage(available, ordered) {
-//   let check;
-//   if (available < ordered) {
-//     check = "Not enough goods in stock!";
-//   } else {
-//     check = "Order is processed, our manager will contact you";
-//   }
-//   return check;
-// }
-
-// console.log(checkStorage(200, 20));
-// console.log(checkStorage(100, 50));
-// console.log(checkStorage(150, 180));
-// console.log(checkStorage(200, 150));
-// console.log(checkStorage(100, 130));
-
-function getSubstring(string, length) {
-  return string.slice(0, length);
-  // const fullText = string;
-  // return fullText.slice(0, length);
+function checkStorage(storage, item) {
+  let word = item === item.toLowerCase();
+  let check = 0;
+  if (storage.indexOf(item)) {
+    check = `${item} is available to order!`;
+  } else {
+    check = "Sorry! We are out of stock!";
+  }
+  return check;
 }
-console.log(getSubstring("Hello world", 3));
-console.log(getSubstring("Hello world", 5));
-console.log(getSubstring("Hello world", 8));
-console.log(getSubstring("Hello world", 11));
-console.log(getSubstring("Hello world", 0));
+checkStorage(["apple", "plum", "pear"], "plum");
+checkStorage(["apple", "plum", "pear"], "pLuM");
+checkStorage(["apple", "plum", "pear"], "pear");
+checkStorage(["apple", "plum", "pear"], "pEAr");
+checkStorage(["apple", "plum", "pear"], "orange");
+checkStorage(["apple", "plum", "pear"], "carrot");
