@@ -1,4 +1,4 @@
-.text {
+/* .text {
 }
 .link {
 }
@@ -8,4 +8,13 @@
 }
 
 .image {
+} */
+.header {
+}
+.title {
+}
+.title-text {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
 }
