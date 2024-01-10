@@ -1,14 +1,7 @@
-/* .text {
+.body {
+  margin: 16px;
+  font-family: sans-serif;
 }
-.link {
-}
-.is-active {
-}
-.btn {
-}
-
-.image {
-} */
 .header {
 }
 .title {
@@ -17,4 +10,14 @@
   text-align: center;
   font-size: 24px;
   font-weight: 400;
+}
+.title-span {
+  color: blueviolet;
+  text-decoration: underline;
+}
+.offers-item:nth-child(even) {
+  color: red;
+}
+.offers-item:nth-child(odd) {
+  color: violet;
 }
