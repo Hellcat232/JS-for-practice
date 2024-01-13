@@ -48,3 +48,11 @@
 // heading.classList.add("title");
 // heading.textContent = "This is a heading";
 // console.log(heading);
+
+// Функция с параметром
+function приветствиеИмя(имя) {
+  console.log("Привет, " + имя + "!");
+}
+
+// Вызов функции с аргументом
+приветствиеИмя("Алиса");
